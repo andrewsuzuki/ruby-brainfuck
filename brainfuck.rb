@@ -21,7 +21,6 @@ class Brainfuck
 		code = raw.split("")
 
 		clean = []
-
 		loops = []
 
 		non_matching_loops = lambda {|bracket| raise "Non-matching loops (extra \"" + bracket +"\")." }
@@ -30,8 +29,9 @@ class Brainfuck
 			next unless valid_command(command) # skip if not valid
 			clean.push(command)
 
-			if command == "[" then loops[index] = -1 end
-			if command == "]"
+			if command == "["
+				loops[index] = -1
+			elsif command == "]"
 				found = false
 
 				loops.to_enum.with_index.reverse_each do |close, open|

@@ -1,10 +1,16 @@
 # ruby-brainfuck
 
-Brainfuck interpreter in Ruby, with interactivity.
+Brainfuck interpreter, with an interactive mode. Written in Ruby.
 
 ## Usage
 
-Coming soon
+Interpret a brainfuck file:
+
+    ruby run.rb -f myfile.bf
+
+Interactive mode:
+
+    ruby run.rb
 
 ## Contributors
 

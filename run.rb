@@ -1,5 +1,5 @@
-require_relative "brainfuck.rb"
-require_relative "app.rb"
+require_relative 'brainfuck'
+require_relative 'app'
 
 brainfuck = Brainfuck.new
 app = App.new(brainfuck)
