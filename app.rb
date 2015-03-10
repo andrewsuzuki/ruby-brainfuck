@@ -56,6 +56,10 @@ class App
 			opts.on("-f f", "--file=f", "Brainfuck file to be interpreted") do |file|
 				options[:file] = file
 			end
+			opts.on_tail("-h", "--help", "Show this message") do
+				puts opts
+				exit
+			end
 		end.parse!
 
 		if options[:file].nil?
